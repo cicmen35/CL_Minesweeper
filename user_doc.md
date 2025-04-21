@@ -1,35 +1,33 @@
-# **Uživateľská Dokumentácia**
+# **User Documentation**
 
-## **Úvod**
-Táto verzia hry 'Minesweeper' je textová verzia hry. Cieľom je vyčistiť pole otvorením všetkých políčok, ktoré neobsahujú míny, bez spustenia skrytých mín. Môžete tiež požiadať o nápovedu, ktorá vám pomôže nájsť bezpečné políčka.
+## **Introduction**
+This version of 'Minesweeper' is a text-based version of the game. The goal is to clear the field by opening all cells that do not contain mines, without triggering any hidden mines. You can also request a hint that will help you find safe cells.
 
-## **Nastavenia Hry**
-1. **Rozmery Plochy**:
-   - Uživateľ zadá rozmery hracej plochy (šírka a výška). Plocha musí mať aspoň 2x2.
+## **Game Settings**
+1. **Board Dimensions**:
+   - The user enters the dimensions of the playing field (width and height). The board must be at least 2x2.
    
-2. **Obtiažnosť**:
-   - Po určení rozmerov plochy, uživateľ vyberie level obtiažnosti:
-     - **Easy (1)**: 10% plochy bude obsahovať míny.
-     - **Medium (2)**: 15% plochy bude obsahovať míny.
-     - **Hard (3)**: 20% plochy bude obsahovať míny.
+2. **Difficulty**:
+   - After determining the board dimensions, the user selects a difficulty level:
+     - **Easy (1)**: 10% of the board will contain mines.
+     - **Medium (2)**: 15% of the board will contain mines.
+     - **Hard (3)**: 20% of the board will contain mines.
 
 ## **Gameplay**
-1. **Cieľ hry**:
-   - Otvoriť všetky políčka, ktoré nemajú míny.
-   - Hra končí, keď sa otvorí políčko s mínou.
+1. **Game Objective**:
+   - Open all cells that don't have mines.
+   - The game ends when a cell with a mine is opened.
 
-2. **Reprezentácia plochy**:
-   - Plocha je zobrazená s políčkami, ktoré sú reprezentované nasledovne:
-     - `" "`:  Neotvorené políčko.
-     - `"0"`: Otvorené políčko bez okolitých mín.
-     - Číslo (`"1"`, `"2"`, atď.): Indikuje počet mín, ktoré sú okolo otvoreného políčka.
+2. **Board Representation**:
+   - The board is displayed with cells represented as follows:
+     - `" "`: Unopened cell.
+     - `"0"`: Opened cell with no surrounding mines.
+     - Number (`"1"`, `"2"`, etc.): Indicates the number of mines surrounding the opened cell.
 
-3. **Kroky**:
-   - **Play**: Uživateľ zadá tip, na základe ktorého sa odhalí políčko
-   - **Hint**: Hra vypíše nápovedu so súradnicami, ktoré určite neobsahujú míny.
-   - Keď uživateľ zadá možnosť `play` , vyberie políčko zadaním jeho súradnic.
-
-
+3. **Steps**:
+   - **Play**: The user enters a guess, based on which a cell is revealed.
+   - **Hint**: The game provides a hint with coordinates that definitely do not contain mines.
+   - When the user selects the `play` option, they choose a cell by entering its coordinates.
 
 ## **Hints**
 - You can request a hint by typing `hint` when prompted. The game will guide you to a safe cell.
